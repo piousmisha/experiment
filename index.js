@@ -5,7 +5,7 @@ app.set('port', (process.env.PORT || 5000))
 app.use(express.static(__dirname + '/public'))
 
 app.get('/', function(request, response) {
-  response.send('Hello World, this is new Testpage generated from Jenkins - 12102019!')
+  response.send('My application is running successfully using Jenkins!')
 })
 
 app.listen(app.get('port'), function() {
