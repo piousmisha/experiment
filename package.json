@@ -1,29 +1,18 @@
 {
-  "name": "node-js-sample",
-  "version": "0.2.0",
-  "description": "A sample Node.js app using Express 4",
-  "main": "index.js",
+  "name": "unit-tests",
+  "version": "0.1.0",
+  "private": true,
+  "description": "A testbed for unit testing Node",
+  "main": "server.js",
   "scripts": {
-    "start": "node index.js"
+    "test": "./node_modules/mocha/bin/mocha test/"
   },
-  "dependencies": {
-    "express": "^4.13.3"
-  },
-  "engines": {
-    "node": "4.0.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-sample"
-  },
-  "keywords": [
-    "node",
-    "heroku",
-    "express"
-  ],
-  "author": "Mark Pundsack",
-  "contributors": [
-    "Zeke Sikelianos <zeke@sikelianos.com> (http://zeke.sikelianos.com)"
-  ],
-  "license": "MIT"
+  "author": "Jordan Kasper",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.4.1",
+    "mocha": "^2.3.3",
+    "sinon": "^1.17.2",
+    "superagent": "^1.4.0"
+  }
 }
